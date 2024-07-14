@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Page</title>
+</head>
+
+<body class="bg-[#f1f5f8]">
+    <section class="menu flex flex-col justify-center items-center space-y-6 mt-16">
+        <div class="title ">
+            <h1 class="text-4xl font-bold font-mono">Our Menu</h1>
+            <div class="underline w-[80px] h-[4px] bg-[#db9f46] text-center m-auto mt-1"></div>
+        </div>
+        <div class="menu-buttons space-x-2 pt-2" >
+            <button
+               data-id="all" class="filter-btn h-[35px] border-2 border-[#db9f46] text-[#db9f46] hover:bg-[#db9f46] hover:text-white w-12 transition duration-700 ease-in-out text-center rounded-lg">All</button>
+            <button
+               data-id="Breakfast" class="filter-btn h-[35px] border-2 border-[#db9f46] text-[#db9f46] hover:bg-[#db9f46] hover:text-white w-24 text-center transition duration-700 ease-in-out rounded-lg">Breakfast</button>
+            <button
+               data-id="Lunch" class="filter-btn h-[35px] border-2 border-[#db9f46] text-[#db9f46] hover:bg-[#db9f46] hover:text-white w-24 text-center transition duration-700 ease-in-out rounded-lg">Lunch</button>
+            <button
+               data-id="Shakes" class="filter-btn h-[35px] border-2 border-[#db9f46] text-[#db9f46] hover:bg-[#db9f46] hover:text-white transition duration-700 ease-in-out w-24 text-center rounded-lg">Shakes</button>
+            <button
+               data-id="Dinner" class="filter-btn h-[35px] border-2 border-[#db9f46] text-[#db9f46] hover:bg-[#db9f46] transition duration-700 ease-in-out hover:text-white w-24 text-center rounded-lg">Dinner</button>
+        </div>
+        <div class="section-center grid grid-cols-2 gap-8 pt-10">
+            <article class="flex flex-row">
+                <img class="h-[130px] w-[170px] border-2 border-[#db9f46] rounded-xl" src="images/All img/pancakes-2291908_1280.jpg" alt="">
+                <div class="item-info w-[260px] ml-1 relative" style="font-family: Montserrat Alternates, sans-serif;">
+                    <header class="flex flex-row">
+                        <h4 class="font-medium">Buttermilk Pancakes</h4>
+                        <h4 class="item-price font-medium text-[#db9f46] absolute right-0">$20.99</h4>
+                </header>
+                <div class="underline w-full h-[1px] bg-gray-400"></div>
+                    <p class="item-text text-sm pt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eligendi eaque aut libero natus
+                        aperiam doloremque aliquam rem ut veritatis.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+<script src="server.js"></script>
+
+</html>
